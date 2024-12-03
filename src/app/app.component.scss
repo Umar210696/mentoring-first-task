@@ -1,11 +1,16 @@
 .container_1 {
-  height: 80px;
   background-color: #4b565e;
   display: flex;
+}
+
+.header {
+  display: flex;
+  width: 1320px;
+  margin: 0 auto;
+  height: 80px;
   align-items: center;
   color: white;
   justify-content: space-between;
-  padding: 0 240px;
 }
 
 .header_left {
@@ -63,12 +68,17 @@
 // CONTAINER-2
 
 .container_2 {
-  height: 48px;
   background-color: #f0ba4e;
   display: flex;
+}
+
+.header-2 {
+  display: flex;
+  width: 1320px;
+  margin: 0 auto;
+  height: 48px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 240px;
 }
 
 // CONTAINER-2-LEFT
@@ -121,9 +131,10 @@
 
 .container_4 {
   display: flex;
+  width: 1320px;
+  margin: 0 auto;
   gap: 28px;
   padding: 0 230px;
-  // margin-bottom: 600px;
 }
 
 .container_4_left {
@@ -224,11 +235,11 @@
   width: 1319px;
   height: 432px;
   display: flex;
-  margin-left: 140px;
   margin-bottom: 40px;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 20px;
+  gap: 40px;
 }
 
 .container_6_header_left {
@@ -418,14 +429,12 @@
 }
 
 .container_7_verh_left {
-  margin-left: 130px;
   font-family: Inter;
   font-size: 28px;
   font-weight: 500;
 }
 
 .container_7_verh_right {
-  margin-right: 100px;
   color: #f0ba4e;
   font-family: Inter;
   font-size: 18px;
@@ -433,18 +442,16 @@
 }
 
 .container_7 {
-  width: 1412px;
+  width: 1320px;
   height: 491px;
-  margin: auto;
-  margin-left: 100px;
+  margin: 0 auto;
 }
 
 .container_7_niz {
   height: 100%;
   width: 100%;
-  gap: 15px;
+  gap: 28px;
   display: flex;
-  padding: 0 80px;
 }
 
 .container_7_cards {
