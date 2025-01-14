@@ -1,6 +1,6 @@
-import { NgFor, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NgFor, NgIf } from "@angular/common";
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
 
 const menuItems = ['Каталог', 'Стройматериалы', 'Инструменты', 'Электрика', 'Интерьер и одежа' ];
 
@@ -11,20 +11,16 @@ const menuCatalog = menuItems.map (
   }
 )
 
-const menuPagination = ['5', '4', '3', '2', '1'];
-
-console.log(menuPagination);
-
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NgIf, NgFor,],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-header',
+    standalone: true,
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss',
+    imports: [RouterOutlet, NgFor, NgIf],
 })
-export class AppComponent {
-  title = 'mentoring-first-project';
+
+export class HeaderComponent {
 
   isShowCatalog = true;
 
@@ -45,12 +41,12 @@ export class AppComponent {
 
   readonly header2item5 = 'Интерьер и одежда';
 
-  menuItems = menuCatalog;
-  
   menuCatalog = true; 
 
-  isShowMen = true;
+ menuItems = menuCatalog
 
+  
+  
   changeMenuText () {
     this.menuItems = menuCatalog.map(
       item => this.menuCatalog ? item.toLowerCase() : item.toUpperCase()
@@ -58,7 +54,5 @@ export class AppComponent {
 
     this.menuCatalog = ! this.menuCatalog
   }
-
-  readonly menuPagination = menuPagination
   
 }
