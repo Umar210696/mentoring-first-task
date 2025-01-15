@@ -11,7 +11,7 @@ export const routes: Routes = [
     },
 
     {
-        path: '',
+        path: 'header',
         component: HeaderComponent
     },
 
@@ -21,7 +21,7 @@ export const routes: Routes = [
     },
 
     {
-        path: '',
+        path: 'footer',
         component: FooterComponent
 
     },
