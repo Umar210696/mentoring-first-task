@@ -3,12 +3,13 @@
     <div class="header_left">
       <img src="/assets/Frame.svg" alt="" />
       <nav class="nav_left">
-        <div class="nav_header_left">{{headeritem1}}</div>
-        <div class="nav_header_left">{{headeritem2}}</div>
-        <div class="nav_header_left" *ngIf="isShowCatalog">{{headeritem3}}</div>
+        <button class="nav_header_left" routerLink="">{{headeritem1}}</button>
+        <button class="nav_header_left">{{headeritem2}}</button>
+        <button class="nav_header_left" *ngIf="isShowCatalog">{{headeritem3}}</button>
       </nav>
       <button class="button_true_false" (click)="isShowCatalog = !isShowCatalog">Скрыть/Показать каталог</button>
       <button class="button_Change_text" (click)="changeMenuText()"  >Изменить текст</button>
+      <button class="button_Change_text" routerLink="users">Users</button>
     </div>
     <div class="header_right">
       <img class="phone" src="/assets/Phone.svg" alt="" />

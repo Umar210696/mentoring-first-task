@@ -1,6 +1,6 @@
 import { NgFor, NgIf } from "@angular/common";
 import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { RouterLink, RouterOutlet } from "@angular/router";
 
 const menuItems = ['Каталог', 'Стройматериалы', 'Инструменты', 'Электрика', 'Интерьер и одежа' ];
 
@@ -17,14 +17,14 @@ const menuCatalog = menuItems.map (
     standalone: true,
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss',
-    imports: [RouterOutlet, NgFor, NgIf],
+    imports: [RouterLink, NgFor, NgIf],
 })
 
 export class HeaderComponent {
 
   isShowCatalog = true;
 
-  readonly headeritem1 = 'Каталог';
+  readonly headeritem1 = 'Главная';
 
   readonly headeritem2 = 'О компании';
 
@@ -43,7 +43,7 @@ export class HeaderComponent {
 
   menuCatalog = true; 
 
- menuItems = menuCatalog
+  menuItems = menuCatalog
 
   
   
