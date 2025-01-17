@@ -1,3 +1,4 @@
+import { NgFor } from "@angular/common";
 import { Comment } from "@angular/compiler";
 import { Component, EventEmitter, Input, Output } from "@angular/core";
 
@@ -6,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
     templateUrl: './user-card.component.html',
     styleUrl: './user-card.component.scss',
     standalone: true,
-    imports: [],
+    imports: [NgFor],
 })
 
 export class UserCardComponent {

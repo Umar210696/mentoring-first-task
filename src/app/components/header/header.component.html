@@ -8,8 +8,9 @@
         <button class="nav_header_left" *ngIf="isShowCatalog">{{headeritem3}}</button>
       </nav>
       <button class="button_true_false" (click)="isShowCatalog = !isShowCatalog">Скрыть/Показать каталог</button>
-      <button class="button_Change_text" (click)="changeMenuText()"  >Изменить текст</button>
+      <button class="button_Change_text" (click)="changeMenuText()">Изменить текст</button>
       <button class="button_Change_text" routerLink="users">Users</button>
+      <button class="button_Change_text" routerLink="todos">Todos</button>
     </div>
     <div class="header_right">
       <img class="phone" src="/assets/Phone.svg" alt="" />
